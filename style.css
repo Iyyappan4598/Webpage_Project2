@@ -134,6 +134,15 @@ body{
   font-size: 50px;
 }
 
+
+
+
+
+.urllink{
+  font-size: 30px;
+}
+
+
 .header h3 {
   font-size: 20px;
   color: black;
@@ -333,3 +342,22 @@ hr{
   text-align: left;
   font-size: 17px;
 }
+.logo{
+  width: 400px;
+}
+
+@media(max-width:530px){
+  .header h1{
+    font-size: 33px;
+  }
+  .header h3{
+    font-size: 17px;
+  }
+  .urllink{
+    font-size: 17px;
+  }
+  .logo{
+    max-width: 100px;
+  }
+}
+
