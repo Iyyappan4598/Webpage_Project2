@@ -8,7 +8,7 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background-color: #99FFFF;
+  background-color: #fdfafa;
 }
 
 
@@ -17,7 +17,7 @@ body{
   padding: 50px;
   text-align: center;  
   background-position: right;
-  background-color: #99FFFF;
+  background-color: #fdfafa;
   color: rgb(0, 119, 255);
 }
 
@@ -34,7 +34,6 @@ body{
 #user button{
   padding: 5px 30px;
   border: none;
-  outline: none;
   background-color: green;
   color: white;
   cursor: pointer;
@@ -50,7 +49,6 @@ body{
 #logout{
   padding: 5px 30px;
   border: none;
-  outline: none;
   background-color: red;
   color: white;
   cursor: pointer;
@@ -89,7 +87,6 @@ body{
 .dropdown .dropbtn {
   font-size: 16px;  
   border: none;
-  outline: none;
   color: white;
   padding: 14px 16px;
   background-color: inherit;
@@ -133,6 +130,15 @@ body{
 .header h1 {
   font-size: 50px;
 }
+
+
+
+
+
+.urllink{
+  font-size: 30px;
+}
+
 
 .header h3 {
   font-size: 20px;
@@ -183,12 +189,6 @@ hr{
   font-variant: small-caps;
 }
 
-/* Tab View */
-@media screen and (max-width: 1000px){
-  .header h1{
-    color: darkcyan;
-  }
-}
 
 /* Mobile View */
 @media screen and (max-width: 440px){
@@ -228,7 +228,7 @@ hr{
 .div1{
   border-radius: 30px;
   margin: 10px;
-  background-color: #f8f8f6;
+  background-color: #f5f5ea;
   padding: 20px;
   display: flex;
   flex-wrap: wrap; 
@@ -238,7 +238,6 @@ hr{
   font-size: 60px;
   font-weight: 300;
   text-align: left;
-  padding: 20px;
 }
 
 .divpara{
@@ -252,8 +251,10 @@ hr{
 }
 
 .div2{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 40px;
+  margin: auto;
+  justify-items: center;
   height: 100%;
   padding: 15px;
 }
@@ -267,17 +268,52 @@ hr{
   height: 650px;
   /* padding: 2%; */
   border-style: double;
-  border-radius: 65%;
+  border-radius: 15%;
+}
+
+.graduate{
+  width: 500px;
+}
+
+.boxtxt1{
+  font-size: 90px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.boxtxt2{
+  font-size: 90px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Graduate Mobile View */
-@media screen and (max-width: 700px){
+@media screen and (max-width: 860px){
   .box1{
     display: block;
     border-radius: 15%;
     padding: 0;
-    float: left;
-    background-color: lightpink;
+    width: 385px;
+    height: 300px;
+  }
+  .graduate{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .box1{
+    display: block;
+    border-radius: 15%;
+    padding: 0;
+    width: 300px;
+    height: 250px;
+  }
+  .graduate{
+    width: 150px;
+    height: 150px;
+  }
+  .boxtxt1{
+    font-size: 40px;
   }
 }
 
@@ -290,18 +326,46 @@ hr{
   height: 650px;
   padding: 1%;
   border-style: double;
-  border-radius: 65%;
+  border-radius: 15%;
 }
 
-@media screen and (max-width: 700px){
+.postgraduate{
+  width: 500px;
+}
+
+
+@media screen and (max-width: 860px){
   .box2{
     display: block;
     border-radius: 15%;
-    padding: 5%;
-    float: left;
+    /* padding: 5%; */
     background-color: lightsalmon;
+    width: 385px;
+    height: 300px;
+  }
+  .postgraduate{
+    width: 200px;
+    height: 200px;
   }
 }
+
+@media screen and (max-width: 450px){
+  .box2{
+    display: block;
+    border-radius: 15%;
+    padding: 20px;
+    width: 300px;
+    height: 250px;
+  }
+  .postgraduate{
+    width: 135px;
+    height: 135px;
+  }
+  .boxtxt2{
+    font-size: 40px;
+  }
+}
+
 
 /* footer */
 #footbar{
@@ -333,3 +397,33 @@ hr{
   text-align: left;
   font-size: 17px;
 }
+.imglogo{
+  height: 100%;
+  width: 500px;
+  float: center;
+}
+
+@media(max-width:580px){
+  .imglogo{
+    max-width: 400px;
+  }
+}
+
+@media(max-width:470px){
+  .header{
+    padding: 20px;
+  }
+  .header h1{
+    font-size: 33px;
+  }
+  .header h3{
+    font-size: 17px;
+  }
+  .urllink{
+    font-size: 17px;
+  }
+  .imglogo{
+    max-width: 220px;
+  }
+}
+
