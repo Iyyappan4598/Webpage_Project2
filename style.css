@@ -397,7 +397,6 @@ hr{
   text-align: left;
   font-size: 17px;
 }
-<<<<<<< HEAD
 .imglogo{
   height: 100%;
   width: 500px;
@@ -414,13 +413,6 @@ hr{
   .header{
     padding: 20px;
   }
-=======
-.logo{
-  width: 400px;
-}
-
-@media(max-width:530px){
->>>>>>> dfe423fb502fb9f8e8a295a469ed83bf3a2369b0
   .header h1{
     font-size: 33px;
   }
@@ -430,13 +422,8 @@ hr{
   .urllink{
     font-size: 17px;
   }
-<<<<<<< HEAD
   .imglogo{
     max-width: 220px;
-=======
-  .logo{
-    max-width: 100px;
->>>>>>> dfe423fb502fb9f8e8a295a469ed83bf3a2369b0
   }
 }
 
